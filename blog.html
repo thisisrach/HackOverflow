@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Website</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <nav>
+        <img src="images/logo.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="home.html">Home</a></li>
+                <li><a class="active" href="blog.html">Blog</a></li>
+                <li><a href="profile.html">Profiles</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- Blog Home -->
+
+    <section id="about-home">
+        <h2>Welcome to the Blog Page!</h2>
+        <p>Your doubts can be solved here.</p>
+    </section>
+
+    <section id="blog-container">
+        <div class="blogs">
+            <div class="post">
+              <img src="images/blog1.png" alt="">
+              <h3>Business Strategy</h3>  
+              <p>To guide your company toward its envisioned future, you need a road map. We’ll help you understand your business and customer insights while developing a compelling vision, strategy and overall blueprint for driving competitive advantage.</p>
+            </div>
+            <div class="post">
+              <img src="images/blog2.png" alt="">
+              <h3>Experience Design</h3>  
+              <p>We help clients understand, ideate and execute modern interactions across channels and functional areas to drive growth, increase productivity and create a culture where people, specifically their needs, are at the forefront of decisioning.</p>
+            </div>
+            <div class="post">
+              <img src="images/blog3.png" alt="">
+              <h3>Operational and Process Excellence</h3>  
+              <p>Your company's business architecture helps your organization deliver the right capabilities at the right time. Together, we’ll dive into your business operations across people, processes, technology and metrics to ensure you can create truly sustainable results.</p>
+            </div>
+            
+        </div>
+
+        <div class="cate">
+            <h2>Categories</h2>
+            <hr>
+            <a href="#">Business Strategy</a>
+            <hr>
+            <a href="#">Experience Design</a>
+            <hr>
+            <a href="#">Operational and Process Excellence</a>
+            <hr>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer-col">
+            <h3>SERVICES</h3>
+            <li>Business Consulting</li>
+            <li>Digital Consulting</li>
+            <li>Industries</li>
+            <li>Marketing Service</li>
+        </div>
+        <div class="footer-col">
+            <h3>RESOURCES</h3>
+            <li>Insights</li>
+            <li>Client Stories</li>
+        </div>
+        <div class="footer-col">
+            <h3>COMPANY</h3>
+            <li>Careers</li>
+            <li>News & Events</li>
+            <li>Locations</li>
+            <li>Contact Us</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Join 20,000 other people and get the latest updates on business to help improve your business.</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©2023 All rights reserved | This template is made by RJ</p>
+        </div>
+
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        })
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        })
+    </script>
+
+</body>
+</html>
